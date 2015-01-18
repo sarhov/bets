@@ -3,8 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <title>Bets</title>
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <link rel="stylesheet" href="{{site.baseurl}}css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="b-top-bar">
+      <div class="inner">
+        <a href="" class="b-logo">
+          <h1 class="b-logo__title">
+            E-Sport Bets, game betting
+          </h1>
+        </a>
+        <ul class="b-nav">
+
+          <li class="b-nav__item">
+            <a href="" class="b-nav__link">оплата</a>
+          </li>
+          <!-- /.b-nav__item -->
+          
+          <li class="b-nav__item">
+            <a href="" class="b-nav__link">правила</a>
+          </li>
+          <!-- /.b-nav__item -->
+          
+          <li class="b-nav__item">
+            <a href="" class="b-nav__link">войти</a>
+          </li>
+          <!-- /.b-nav__item -->
+          
+          <li class="b-nav__item">
+            <a href="" class="b-nav__link">mm</a>
+          </li>
+          <!-- /.b-nav__item -->
+
+        </ul>
+        <!-- /.b-nav --></div>
+      </div>
+      <!-- /.top-bar -->
+      <div class="inner b-site-text">
+        <div class="unisans block b-site-text__description">
+          Ставки на все матчи киберспорта
+          С самыми высокими коефициентами
+        </div>
+        <!-- b-site-description -->
+        <div class="unisans block b-site-text__slogan">
+          Cледи за любимыми командами и <span class="blue">зарабатывай деньги</span>
+        </div>
+        <!-- b-site-slogan -->
+      </div>
+      <!-- b-site-text -->
+
+    </header>
+    <!-- /.header -->
+    <div class="last-scores-bar">
+      <div class="inner">
+        <div class="b-marquee">
+          <div class="unisans b-marquee__title">
+            Последние Результаты:
+          </div>
+          <!-- /.b-marquee__title -->
+          <div class="b-marquee__inner">
+            <ul class="b-marquee-list">
+              {% for i in (1..18) %}
+              
+              <li class="b-marquee-list__item">
+                <span class="b-marquee-list__team b-marquee-list__team_one">NAVI</span>
+                <span class="b-marquee-list__score">2:0</span>
+                <span class="b-marquee-list__team b-marquee-list__team_two"> Empire </span>
+              </li>
+              <!-- /.b-marquee-list__item -->
+
+              {% endfor %}
+            </ul>
+            <!-- /.b-marquee-list -->
+          </div>
+          <!-- /.b-marquee__inner -->
+        </div>
+        <!-- /.b-marque --> 
+      </div>
+      <!-- inner -->
+    </div>
+    <!-- last-score-bar -->
+
+    <div class="top-links">
+      <inner>
+        <div class="b-links unisans">
+          <a href="#" class="b-links__link">Dota  2</a>
+          <a href="#" class="b-links__link">CS: Global  Offenisve </a>
+          <a href="#" class="b-links__link">Starcraft  2 </a>
+          <a href="#" class="b-links__link">League  of  Legends</a>
+        </div>
+        <!-- /.b-links -->
+      </inner>
+    </div>
+    <!-- /.top-links -->
+
+  {% include slider.html %}
+
+  <div class="main-wrapper">
+    <div class="inner">
+      <div class="main-content">
+        <section class="items">
+          <article class="b-item">
+            <div class="b-item__section-left">
+            <img src="{{site.baseurl}}img/item-img.png" alt="">
+              <div class="b-time">
+                <div class="b-time__team-logo">
+                  <img src="{{site.baseurl}}img/time-logo1.png" alt="" class="b-time__img">
+                </div>
+                <!-- /.b-time__team-logo -->
+                <div class="b-time__text">
+                  <span class="b-time__text-text unisans">22:00</span>
+                </div>
+                <!-- /.time -->
+                <div class="b-time__team-logo">
+                  <img src="{{site.baseurl}}img/time-logo2.png" alt="" class="b-time__img">
+                </div>
+                <!-- /.b-time__team-logo -->
+              </div>
+              <!-- /.b-time -->
+            </div>
+            <!-- /.b-item__section-left -->
+            <div class="b-item__section-right">
+              <h1 class="b-article-title bebas">Dota 2 Champions League
+                Natus Vincere vs Invictus Gaming</h1>
+              <div class="b-team unisans">
+                <div class="b-team__item">
+                  <span class="b-team__text blue">NA Vi</span>
+                  <span class="b-team__number lower">1.9</span>
+                </div>
+                <div class="b-team__vs bebas">VS</div>
+                <div class="b-team__item">
+                  <span class="b-team__text blue">ig</span>
+                  <span class="b-team__number higher">2.10</span>
+                </div>
+              </div>
+              <!-- b-team -->
+
+              <div class="b-bet">
+                <form action="" class="bet-form">
+                  <div class="b-bet__text"></div>
+                  <!-- /.b-bet__text -->
+                  <input type="text" name="" id="" class="b-bet__input-text">
+                  <input value="Постаивть" type="submit" class="unisans b-bet__input-submit">
+                </form>
+                <!-- /.bet-form -->
+              </div>
+              <!-- /.b-bet -->
+              
+              <div class="b-item-links">
+                <a href="#" class="b-item-links__link">Другие виды ставок </a>
+                <a href="#" class="b-item-links__link">Live cтавки на игру</a>
+                <a href="#" class="b-item-links__link">Cтатистика</a>
+              </div>
+              <!-- b-item-links -->
+            </div>
+            <!-- /.b-item__section-right -->
+          </article>
+          <!-- /.b-item -->
+        </section>
+      </div>
+      <!-- /.main-content -->
+      <div class="main-sidebar">
+        <div class="b-sidebar">
+
+          <form action="" class="search-from">
+            <div class="b-search__wrap">
+              <input class="b-search__input-text"  type="text" name="" id="">
+              <input class="b-search__input-submit" type="submit" value="">
+            </div>
+            <!-- b-search -->
+          </form>
+
+        </div>
+        <!-- /.sidebar-block -->
   
-</body>
-</html>
+      <div class="b-sidebar">
+        <h4 class="b-sidebar__title block unisans">
+          Матч дня
+        </h4>
+        <div class="b-sidebar__content">
+          
+        </div>
+        <!-- /.b-sidebar__content -->
+      </div>
+      </div>
+      <!-- /.main-sidebar -->
+    </div>
+    <!-- /.inner -->
+  </div>
+  <!-- /.main-wrapper -->
+
+
+  <script src="{{site.baseurl}}js/carousel.js"></script>
+  <script src="{{site.baseurl}}js/functions.js"></script>
+
+  </body>
+  </html>

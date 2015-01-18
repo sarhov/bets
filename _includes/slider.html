@@ -1,0 +1,52 @@
+<div class="slider-wrap">
+  <div class="inner">
+    <div class="b-slider">
+      <div class="b-slider__content">
+        <div id="carousel">
+          {% for i in (1..3) %}
+          <div class="b-slider-item unisans">
+          <img src="{{site.baseurl}}img/slider-img_{{forloop.index}}.png" alt="">
+                <a href="#" class="block b-slider-item__content b-slider-item__content-title">
+                  Ставь на турнир <span class="bebas blue">DOTA 2 Champions League</span>
+                </a>
+                <!-- /.block b-slider-item__content-title -->
+                <a  href="#" class="block b-slider-item__content b-slider-item__content-subtitle">
+                  У нас самые высокие коефициенты!
+                </a>
+                <!-- /.block b-slider-item__content-subtitle -->
+            <!-- /.b-slider-item__date -->
+          </div>
+          <!-- /.b-slider-item -->
+          {% endfor %}
+        </div>
+      </div>
+      <!-- /.b-slider__content -->
+      <div class="b-slider__pager unisans">
+        <ul id="pager">
+          {% for i in (1..3) %}
+          <li class="b-slider__pager-item">
+            <a href="">
+             <h3 class="b-slider__pager-item-title bebas">Dota 2</h3>
+             <!-- /.b-slider-pager-item__title -->
+             <div class="b-slider__pager-item-description">
+              Невероятно зрелищный турнир
+              Dota 2 Champions League
+            </div>
+            <!-- /.b-slider-pager-item__description -->
+            <div class="b-slider__pager-item-date bebas">
+              <span class="b-slider__pager-item-date-text">
+                21.01.2015 - 30.01.2015
+              </span>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- /.b-slider__pager -->
+  </div>
+  <!-- b-slider -->
+</div>
+<!-- inner -->
+</div>
+<!-- slider-wrap -->
