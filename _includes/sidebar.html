@@ -1,0 +1,128 @@
+<div class="main-sidebar">
+  <div class="b-sidebar">
+    <div class="b-search">
+      <form action="" class="b-search__from">
+        <div class="b-search__wrap">
+          <input placeholder="Поиск..." class="b-search__input-text"  type="text" name="" id="">
+          <input class="b-search__input-submit" type="submit" value="">
+        </div>
+        <!-- b-search -->
+      </form>
+    </div>
+    <!-- /.b-search -->
+  </div>
+  <!-- /.b-sidebar -->
+  
+  <div class="b-sidebar">
+    <h4 class="b-sidebar__title block unisans">
+      Матч дня
+    </h4>
+    <div class="b-sidebar__content">
+      <div class="b-day-match">
+        <img src="{{site.baseurl}}img/day-img.png" alt="" class="b-day-match__img">
+        <div class="b-day-match__team">
+          <img src="{{site.baseurl}}img/time-logo1.png" alt="" class="b-day-match__team-img">
+        </div>
+        <!-- /.b-day-match__team -->
+        <div class="b-day-match__time unisans">
+          <span class="b-day-match__time-text">22: 00</span>
+        </div>
+        <!-- /.b-day-match__time -->
+        <div class="b-day-match__team b-day-match__team_right">
+          <img src="{{site.baseurl}}img/time-logo2.png" alt="" class="b-day-match__team-img">
+        </div>
+        <!-- /.b-day-match__team b-day-match__team_right -->
+      </div>
+      <!-- /.b-day-match -->
+    </div>
+    <!-- /.b-sidebar__content -->
+  </div>
+  <!-- b-sidebar -->
+
+  <div class="b-sidebar">
+    <h4 class="b-sidebar__title block unisans">Результаты игр</h4>
+    <!-- /.b-sidebar__title block unisans -->
+    <div class="b-sidebar__content b-sidebar__content_black">
+      {% for i in (1..7) %}
+      <div class="b-items">
+        <div class="b-items__team b-items__team_left bebas">
+          <img src="{{site.baseurl}}img/time-logo1.png" alt="" class="b-items__img">
+          <span class="b-items__team-text">Mousesports</span>
+        </div>
+        <!-- /.b-items__team b-items__team_left -->
+        <div class="b-items__item unisans">
+          <span class="b-items__item-text">2 - 1</span>
+        </div>
+        <!-- /.b-items__item -->
+
+        <div class="b-items__team b-items__team_right bebas">
+          <img src="{{site.baseurl}}img/time-logo2.png" alt="" class="b-items__img">
+          <span class="b-items__team-text">Alliance</span>
+        </div>
+        <!-- /.b-items__team b-items__team_right -->
+      </div>
+      <!-- /.b-items -->
+      {% endfor %}
+      <div class="b-item-links">
+        <a href="#" class="b-item-links__item blue bebas">Dota 2 </a>
+        <a href="#" class="b-item-links__item blue bebas">CS: GO </a>
+        <a href="#" class="b-item-links__item blue bebas">WOT </a>
+        <a href="#" class="b-item-links__item blue bebas">LOL</a>
+      </div>
+      <!-- /.b-item-links -->
+    </div>
+    <!-- /.b-sidebar__content -->
+  </div>
+  <!-- /.b-sidebar -->
+
+  <div class="b-sidebar">
+    <h4 class="b-sidebar__title block unisans">Ближайшие матчи</h4>
+    <!-- /.b-sidebar__title block unisans -->
+    <div class="b-sidebar__content b-sidebar__content_black">
+      {% for i in (1..3) %}
+      <div class="b-items">
+        <div class="b-items__team b-items__team_left bebas">
+          <img src="{{site.baseurl}}img/time-logo1.png" alt="" class="b-items__img">
+          <span class="b-items__team-text">Titan</span>
+        </div>
+        <!-- /.b-items__team b-items__team_left -->
+        <div class="b-items__item b-items__item_big bebas">
+        <span class="b-items__item-text">VS</span>
+          <div class="b-items__bets bebas">
+            <span class="b-items__bets-item">1.56</span>
+            <span class="b-items__bets-separator"> - </span>
+            <span class="b-items__bets-item">2.3</span>
+          </div>
+        </div>
+        <!-- /.b-items__item -->
+
+        <div class="b-items__team b-items__team_right bebas">
+          <img src="{{site.baseurl}}img/time-logo2.png" alt="" class="b-items__img">
+          <span class="b-items__team-text">Liquid</span>
+        </div>
+        <!-- /.b-items__team b-items__team_right -->
+        <div class="b-items__footer bebas">
+          <span class="b-items__time b-items__time_date">21.01.2015 / </span>
+          <span class="b-items__time b-items__time_hours blue"> 22:30</span>
+        </div>
+        <!-- /.b-items__footer -->
+      </div>
+      <!-- /.b-items -->
+      {% endfor %}
+    </div>
+    <!-- /.b-sidebar__content -->
+  </div>
+  <!-- /.b-sidebar -->
+
+  <div class="b-sidebar">
+    <div class="b-sidebar__content">
+      <img src="{{site.baseurl}}img/banner.png" alt="" class="sidebar-banner">
+    </div>
+    <!-- /.b-sidebar__content -->
+  </div>
+  <!-- /.b-sidebar -->
+
+  
+
+</div>
+<!-- /.main-sidebar -->
