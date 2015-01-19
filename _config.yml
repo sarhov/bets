@@ -10,7 +10,7 @@ url: "./" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 include:      ["*.scss"]
-exclude: ["*.sublime-project", "*.sublime-workspace"]
+exclude: ["*.sublime-project", "*.sublime-workspace", "*PSD"]
 collections:
   collection_name:
     output: true
